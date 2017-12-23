@@ -9,6 +9,6 @@
     "mocha": "^4.0.1"
   },
   "scripts": {
-    "test": "nodemon --exec mocha"
+    "test": "nodemon --exec mocha -R min --recursive"
   }
 }

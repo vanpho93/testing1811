@@ -9,9 +9,4 @@ function addCallback (a, b, cb) {
     }, 100);
 }
 
-addCallback(4, 5, (err, result) => {
-    if (err) return console.log(err);
-    console.log(result);
-});
-
-module.exports = { add };
+module.exports = { add, addCallback };

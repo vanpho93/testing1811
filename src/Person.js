@@ -1,5 +1,6 @@
 class Person {
     static printPeople(persons) {
+        console.log(this.name);
         console.log(persons);
     }
     constructor(name, age) {

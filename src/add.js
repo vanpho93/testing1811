@@ -18,4 +18,4 @@ function addPromise (a, b) {
     });
 }
 
-module.exports = { add, addCallback };
+module.exports = { add, addCallback, addPromise };

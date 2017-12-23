@@ -9,4 +9,13 @@ function addCallback (a, b, cb) {
     }, 100);
 }
 
+function addPromise (a, b) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (isNaN(a) || isNaN(b)) return reject(new Error('Type error'));
+            resolve(a + b);
+        }, 100);
+    });
+}
+
 module.exports = { add, addCallback };

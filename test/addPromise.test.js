@@ -1,7 +1,7 @@
 const { addPromise } = require('../src/add');
 const assert = require('assert');
 
-describe.only('Test addPromise function', () => {
+describe('Test addPromise function', () => {
     it('Can add 2 numbers with addPromise function', (done) => {
         addPromise(4, 5)
         .then(result => {
